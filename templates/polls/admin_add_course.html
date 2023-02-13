@@ -1,0 +1,44 @@
+{% extends 'polls/adminbase.html' %}
+{% load widget_tweaks %}
+{% block content %}
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  a:link {
+        text-decoration: none;
+      }
+    
+  </style>
+</head>
+<h2 style="text-align:center; color:blue;">Add Course</h2>
+<form method="POST" autocomplete="off" style="margin:100px;margin-top: 0px;">
+    {%csrf_token%}
+    <div class="form-group">
+      <label for="course_name">Category</label>
+      {% render_field CourseForm.category class="form-control" placeholder="Cryptography" %}
+
+        <label for="course_name">Course Name</label>
+      {% render_field CourseForm.course_name class="form-control" placeholder="Crypto Basics " %}
+
+     <label for="course_name">Validity(Years)</label>
+      {% render_field CourseForm.validity class="form-control" placeholder="1" %}
+
+    <label for="course_name">Amount</label>
+      {% render_field CourseForm.amount class="form-control" placeholder="5000" %}
+
+
+    </div>
+    
+    
+<br>
+    <button type="submit" class="btn btn-primary">ADD</button>
+  </form>
+<br><br><br><br>
+{% endblock content %}

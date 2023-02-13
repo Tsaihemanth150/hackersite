@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+
+  <script src="//netdna.bootstrap.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+ <style media="screen">
+    a:link {
+      text-decoration: none;
+    }
+
+    h6 {
+      text-align: center;
+    }
+
+    .row {
+      margin: 100px;
+    }
+  </style>
+
+<body>
+  {% include "polls/navbar.html" %}
+  <br><br>
+
+<br><br>
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading"><center>
+      <h3 class="panel-title">Course</h3>
+    </center>
+    </div>
+
+    <table class="table table-hover" id="dev-table">
+      <thead>
+        <tr>
+        <th>Serial No.</th>
+          <th>Course Name</th>
+          <th> Category</th>
+          <th> Amount (INR) </th>
+          <th> Validity (Year)</th>
+
+
+        </tr>
+      </thead>
+      {% for t in Course %}
+      <tr>
+        <td> {{ forloop.counter }}</td>
+        <td> {{t.course_name}}</td>
+        <td> {{t.category}}</td>
+        <td> {{t.amount}}</td>
+        <td> {{t.validity}}</td>
+
+
+
+
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+
+
+  {% include "polls/footer.html" %}
+
+</body>
+
+</html>

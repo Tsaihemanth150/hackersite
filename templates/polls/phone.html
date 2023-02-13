@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<style>
+#data{
+text-align:center;
+font-family: Georgia, serif;
+ font-size: 20px;
+ color:#9711EE;
+}
+#ph,#ex{
+text-align:center;
+font-size: 20px;
+}
+</style>
+<body>
+{% include "polls/navbar.html" %}
+<br><br>
+  <div class="alert alert-secondary" id="ph" role="alert">
+   <h2> Phone Number Details Finder</h2>
+</div>
+<div id="ex">
+welcome {{request.user.first_name}}
+</div>
+
+<center>
+<form method="POST" action="">
+    {%csrf_token %}
+     <label for="" id="ex">Enter the phone number with country code</label>: <br>
+    <input type="text" id="num" name="num" placeholder="+91 *********" required> <br> <br>
+     <div class="form-group">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+                Agree to <a id="link123" href="/t&c">terms and conditions</a>
+            </label>
+        <div class="invalid-feedback">
+        You must agree before submitting.
+        </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" value="Send Message" type="submit">check </button>
+</form>
+    <br><br>
+    <div id="data">
+    The country where number is from : {{num1 }} <br>
+    Operator of the number: {{num2 }} <br>
+    The current time zone of the number:{{num3 }} <br>
+    Is entered number is valid: {{num4 }} <br>
+    IS this number can be possible:   {{num5 }} <br>
+    </div>
+
+<br><br><br><br>
+  </center>
+    {% include "polls/footer.html" %}
+
+</body>
+
+</html>

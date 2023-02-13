@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+<style>
+
+body {
+    background-image: url('static/image/wp3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}</style>
+
+<body>
+  {% include "polls/navbar.html" %}
+<br><br>
+
+<div class="alert alert-warning" role="alert">
+  <center><h1>Topics</h1></center>
+</div>
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="static/image/pen.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Pen-testing</h5>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+     <center><a class="btn btn-primary btn-sm" href="/pentesting" role="button">View this course</a></p></center>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="static/image/j1.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Digital Forensics </h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <center><a class="btn btn-primary btn-sm" href="/digitalforensic" role="button">View this course</a></p></center>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="static/image/pen4.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Cryptography</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+
+
+
+<center>
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
+   View this course
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <center>
+        <h5 class="modal-title" id="exampleModalLabel"> premium content</h5>
+        </center>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      This is course is Premimum one!! which you need to buy it only at $9.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="/price"><button type="button" class="btn btn-info">More Details</button></a>
+        <a href="/adminlogin"><button type="button" class="btn btn-success">Buy This</button></a>
+      </div>
+    </div>
+  </div>
+</div></center>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="static/image/cloud security.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Cloud Security</h5>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+      <center>
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
+   View this course
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <center>
+        <h5 class="modal-title" id="exampleModalLabel"> premium content</h5>
+        </center>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      This is course is Premimum one!! which you need to buy it only at .
+      </div>
+      <div class="modal-footer">
+
+        <a href="/price"><button type="button" class="btn btn-info">More Details</button></a>
+        <a href="/topics"><button type="button" class="btn btn-success">Buy This</button></a>
+      </div>
+    </div>
+  </div>
+</div></center>
+
+
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="static/image/social.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Social Engineering </h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+     <center>
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
+   View this course
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <center>
+        <h5 class="modal-title" id="exampleModalLabel"> premium content</h5>
+        </center>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      This is course is Premimum one!! which you need to buy it only at $9.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="/price"><button type="button" class="btn btn-info">More Details</button></a>
+        <a href="/topics"><button type="button" class="btn btn-success">Buy This</button></a>
+      </div>
+    </div>
+  </div>
+</div></center>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="static/image/ransome.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Ransomware</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+     <center>
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
+   View this course
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <center>
+        <h5 class="modal-title" id="exampleModalLabel"> premium content</h5>
+        </center>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      This is course is Premimum one!! which you need to buy it only at $9.
+      </div>
+      <div class="modal-footer">
+
+        <a href="/price"><button type="button" class="btn btn-info">More Details</button></a>
+        <a href="/topics"><button type="button" class="btn btn-success">Buy This</button></a>
+      </div>
+    </div>
+  </div>
+</div></center>
+    </div>
+  </div>
+</div>
+
+</div>
+  {% include "polls/footer.html" %}
+
+</body>
+
+</html>

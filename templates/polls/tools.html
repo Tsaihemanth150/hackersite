@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+<style>
+
+
+
+body {
+  background-image: url('static/image/wp.jpg');
+   background-repeat: no-repeat;
+    background-attachment: fixed;
+  background-size: cover;
+}
+
+table {
+
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 75%;
+}
+
+td, th {
+ border: 1px solid black;
+  border-radius: 20px;
+
+
+#b1{
+color:#051566;
+}
+tr:nth-child(even,odd) {
+  background-color: #D6EEEE;
+}
+</style>
+<body>
+  {% include "polls/navbar.html" %}
+<br><br>
+<br>
+
+<center>
+<h2>This are the few tools that are used in various phases in the Pen-testing.</h2>
+<br>
+  <br>
+
+
+
+<table>
+  <tr>
+    <th>SrNO</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Link</th>
+  </tr>
+  <tr>
+    <td>01</td>
+    <td>Nmap</td>
+    <td>Network Scanning Tool</td>
+    <td> <form action="/nmap" method="get" target="_blank">
+         <button id="b1" type="submit">Click here</button>
+      </form>
+    </td>
+  </tr>
+   <tr>
+    <td>02</td>
+    <td>Ophcrack</td>
+    <td>Password Cracker for Windows log-in passwords</td>
+    <td> <form action="https://ophcrack.sourceforge.io/download.php" method="get" target="_blank">
+         <button type="submit">Click here</button>
+      </form>
+    </td>
+  </tr>
+  <tr>
+    <td>03</td>
+    <td>N-Stalker</td>
+    <td>web application assessment's</td>
+    <td> <form action="http://www.nstalker.com/products/editions/free/" method="get" target="_blank">
+         <button background-radius type="submit" >Click here</button>
+      </form>
+    </td>
+  </tr>
+
+  <tr>
+    <td>04</td>
+    <td>Cain and Abe</td>
+    <td>password recovery tool for Microsoft Windows</td>
+    <td> <form action="https://web.archive.org/web/20190603235413/http://www.oxid.it/cain.html" method="get" target="_blank">
+         <button type="submit">Click here</button>
+      </form>
+    </td>
+  </tr>
+  <tr>
+    <td>05</td>
+    <td>OmniPeek</td>
+    <td>packet analyzer software tool</td>
+    <td> <form action="https://www.liveaction.com/products/omnipeek-network-protocol-analyzer/" method="get" target="_blank">
+         <button type="submit">Click here</button>
+      </form>
+    </td>
+  </tr>
+  <tr>
+    <td>06</td>
+    <td>Wireshark</td>
+    <td>packet analyzer</td>
+    <td> <form action="https://www.wireshark.org/docs/" method="get" target="_blank">
+         <button type="submit">Click here</button>
+      </form>
+    </td>
+  </tr>
+  <tr>
+    <td>07</td>
+    <td>HTTrack</td>
+    <td>Web crawler and offline browser</td>
+    <td> <form action="https://www.httrack.com/page/2/en/index.html" method="get" target="_blank">
+         <button type="submit">Click here</button>
+      </form>
+    </td>
+  </tr>
+  <tr>
+    <td>08</td>
+    <td>Whois</td>
+    <td>webiste infogather</td>
+    <td> <form action="https://whois.domaintools.com/" method="get" target="_blank">
+         <button type="submit">Click here</button>
+      </form>
+    </td>
+  </tr>
+  <tr>
+    <td>09</td>
+    <td>wolframaplha</td>
+    <td>Subdomain finder for website</td>
+    <td> <form action="https://www.wolframalpha.com/widgets/view.jsp?id=d97d41f437a0e198c706f83f1e7aa8ea" method="get" target="_blank">
+         <button type="submit">Click here</button>
+      </form>
+    </td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>shodan</td>
+    <td>database and serch engine of vernaalbilites</td>
+    <td> <form action="https://www.shodan.io/" method="get" target="_blank">
+         <button type="submit">Click here</button>
+      </form>
+    </td>
+  </tr>
+
+</table>
+</center>
+<br><br>
+  {% include "polls/footer.html" %}
+
+</body>
+
+</html>

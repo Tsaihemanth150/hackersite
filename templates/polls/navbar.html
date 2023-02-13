@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <style type="text/css">
+    .bs-example {
+      margin: 0px;
+
+    }
+    .bg-dark {
+    background-color: #212529!important;
+}
+    .navbar-brand {
+      font-size: 20px;
+      font-family: monospace;
+
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+  <div class="bs-example">
+    <nav class="navbar navbar-expand-md  navbar-dark fixed-top" style="background-color: #000000;">
+    <a style="color: #ffffff;text-decoration: none; " href="/"><font face = "Gill" size =" 5">Hacker  Site</font><br /></a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav">
+          <p style="
+          padding-left: 15px;
+      "  class="nav-item nav-link active"></p>
+
+          <a href="/customeroptions" class="nav-item nav-link">Customer</a>
+
+
+
+           <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Resources for cybersecurity
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="/topics">Topics</a>
+          <a class="dropdown-item" href="/tools">Tools</a>
+          <a class="dropdown-item" href="/phone">Check Phone Number</a>
+          <a class="dropdown-item" href="/certification">Certification</a>
+          <a class="dropdown-item" href="/price">Course Price</a>
+
+
+        </div>
+
+
+
+
+        </li>
+
+          <a href="/aboutus" class="nav-item nav-link">About Us</a>
+          <a href="/contactus" class="nav-item nav-link">Contact Us</a>
+        </div>
+
+ <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+
+
+      </div>
+    </nav>
+  </div>
+
+
+</body>
+
+</html>

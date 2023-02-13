@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 75%;
+}
+
+td, th {
+ border: 1px solid black;
+  border-radius: 10px;
+
+}
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+</style>
+<body>
+  {% include "polls/navbar.html" %}
+  <br><br><br>
+  <center><b><h2>Nmap</h2></b></center>
+<p>Nmap is the network Tool,Nmap is used to discover hosts and services on a computer network by sending packets and analyzing the responses
+   Nmap provides a number of features for probing computer networks, including host discovery and service and operating system detection.
+   Nmap has maintained its preeminence because of the large community of developers and coders who help to maintain and update it.
+   The Nmap community reports that the tool, which anyone can get for free, is downloaded several thousand times every week.
+   Because of its flexible, open source code base, it can be modified to work within most customized or heavily specialized environments.
+</p>
+
+  <center>
+  <table>
+  <tr>
+    <th>SrNO</th>
+    <th>command</th>
+    <th>Description</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td>01</td>
+    <td>Scan a single IP</td>
+    <td>nmap [Target_Ip]</td>
+    <td>nmap 192.168.20.128</td>
+  </tr>
+    <tr>
+    <td>02</td>
+    <td>Scan a host</td>
+    <td>nmap [Target_web_address]</td>
+    <td>nmap www.example.com</td>
+  </tr> <tr>
+    <td>03</td>
+    <td>Scan a range of IPs</td>
+    <td>nmap [Range-IP]</td>
+    <td>nmap 192.168.20.120-128</td>
+  </tr> <tr>
+    <td>04</td>
+    <td>Scan a subnet</td>
+    <td>nmap [Subnet]</td>
+    <td>nmap 192.168.20.2/24</td>
+  </tr> <tr>
+    <td>05</td>
+    <td>Scan targets from Text file</td>
+    <td>nmap -iL [Text_File_Name]</td>
+    <td>nmap -iL ips.txt</td>
+  </tr> <tr>
+    <td>06</td>
+    <td>Scan a single port</td>
+    <td>nmap -p [port_number][Ip_address]</td>
+    <td>nmap -p 22 192.168.20.128</td>
+  </tr> <tr>
+    <td>07</td>
+    <td>Scan a range of ports</td>
+    <td>nmap -p [Range_of_ports][ip_adress]</td>
+    <td>nmap -p 1-100 192.168.20.128</td>
+  </tr> <tr>
+    <td>08</td>
+    <td>Scan 100 common ports</td>
+    <td>nmap -F [ip_adress]</td>
+    <td>nmap -F 192.168.20.128</td>
+  </tr> <tr>
+    <td>09</td>
+    <td>Specify UDP or TCP scan	</td>
+    <td>nmap -p u:137,T:139 [ip_adress]</td>
+    <td>nmap -p U:137,T:139 192.168.20.128</td>
+  </tr> <tr>
+    <td>10</td>
+    <td>Scan all ports</td>
+    <td>nmap -p- [ip_address]</td>
+    <td>nmap -p- 192.168.20.128	</td>
+  </tr> <tr>
+    <td>11</td>
+    <td>Scan using TCP connect</td>
+    <td>nmap -sT [ip_address]</td>
+    <td>nmap -sT 192.168.20.128</td>
+  </tr> <tr>
+    <td>12</td>
+    <td>Scan using TCP SYN scan</td>
+    <td>nmap -sS [IP_Address]</td>
+    <td>nmap -sS 192.168.20.128</td>
+  </tr> <tr>
+    <td>13</td>
+    <td>Scan Selected ports (Ignore Discovery)</td>
+    <td>nmap -Pn -F [ip_address]</td>
+    <td>nmap -Pn -F 192.168.20.128</td>
+  </tr> <tr>
+    <td>14</td>
+    <td>Scan UDP ports</td>
+    <td>nmap -sU -p [port_numebr],[ip_address]</td>
+    <td>nmap -sU -p 123,161,162 192.168.1.1</td>
+  </tr> <tr>
+    <td>15</td>
+    <td>Detect OS and Services	</td>
+    <td>nmap -A [ip_address]</td>
+    <td>nmap -A 192.168.20.128</td>
+  </tr> <tr>
+    <td>16</td>
+    <td>Standard service detection</td>
+    <td>nmap -sV [ip_address]</td>
+    <td>nmap -sV 192.168.20.128</td>
+  </tr> <tr>
+    <td>17</td>
+    <td>Aggressive service detection</td>
+    <td>nmap -sV –version-intensity 5 [ip_address]</td>
+    <td>nmap -sV –version-intensity 5 192.168.20.128</td>
+  </tr> <tr>
+    <td>18</td>
+    <td>Save default output to file</td>
+    <td>nmap -oN result.txt [ip_address]	</td>
+    <td>nmap -oN result.txt 192.168.20.128	</td>
+  </tr> <tr>
+    <td>19</td>
+    <td>Save results as XML	</td>
+    <td>nmap -oX [file.xml] [ip_address]</td>
+    <td>nmap -oX resultxml.xml 192.168.20.128</td>
+  </tr> <tr>
+    <td>20</td>
+    <td>Save formatted results (Grep)</td>
+    <td>nmap -oG [textfile][ip_address]</td>
+    <td>nmap -oG formattable.txt 192.168.20.128	</td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>Save in all formats	</td>
+    <td>nmap -oA allformats [ip_address]</td>
+    <td>nmap -oA allformats 192.168.20.128</td>
+  </tr> <tr>
+    <td>22</td>
+    <td>Scan using default safe scripts	</td>
+    <td>nmap -sV -sC [ip_address]</td>
+    <td>nmap -sV -sC 192.168.20.128	</td>
+  </tr> <tr>
+    <td>23</td>
+    <td>Get help for a script</td>
+    <td>nmap –script-help=ssl-heartbleed</td>
+    <td>nmap –script-help=ssl-heartbleed</td>
+  </tr> <tr>
+    <td>24</td>
+    <td>Scan using a specific script</td>
+    <td>nmap -sV -p 443 -script=ssl-heartbleed [ip_address]</td>
+    <td>nmap -sV -p 443 -script=ssl-heartbleed 192.168.20.133	 </td>
+  </tr> <tr>
+    <td>25</td>
+    <td>Update script database</td>
+    <td>nmap –script-updatedb</td>
+    <td>nmap –script-updatedb</td>
+  </tr> <tr>
+    <td>26</td>
+    <td>Scan for UDP DDOS reflectors</td>
+    <td>nmap -sU -A -PN -n -pU:19,53,123,161 -script=ntp-monlist,dns-recursion,snmp-sysdescr [ip_address]</td>
+    <td>nmap -sU -A -PN -n -pU:19,53,123,161 -script=ntp-monlist,dns-recursion,snmp-sysdescr 192.168.20.2/24</td>
+  </tr> <tr>
+    <td>27</td>
+    <td>Gather page titles from HTTP Servers</td>
+    <td>nmap –script=http-title [ip_address]</td>
+    <td>nmap –script=http-title 192.168.20.128</td>
+  </tr> <tr>
+    <td>28</td>
+    <td>Get HTTP headers of web services	</td>
+    <td>nmap –script=http-headers [ip_address]</td>
+    <td>nmap –script=http-headers 192.168.20.128</td>
+  </tr> <tr>
+    <td>29</td>
+    <td>Find web apps from known paths</td>
+    <td>nmap –script=http-enum [ip_address]</td>
+    <td>nmap –script=http-enum 192.168.20.128</td>
+  </tr>
+    <tr>
+    <td>30</td>
+    <td>Find exposed Netbios servers<td>
+    <td>nmap -sU –script nbtstat.nse -p 137 192.168.20.128</td>
+  </tr>
+
+</table>
+</center>
+
+
+  <p>
+   There are distributions of Nmap specific to Windows, Mac and Linux environments, but Nmap also supports less popular or older operating systems like Solaris, AIX or AmigaOS. The source code is available in C, C++, Perl and Python.
+   The heart of Nmap is port scanning. How it works is that users designate a list of targets on a network that they want to learn information about. Users don’t need to identify specific targets, which is good because most administrators don’t have a complete picture of everything that is using the potentially thousands of ports on their network. Instead, they compile a range of ports to scan.
+   It’s also possible to scan all network ports, although that would potentially take a lot of time and eat up quite a bit of available bandwidth. Plus, depending on the type of passive defenses that are in use on the network, such a massive port scan would likely trigger security alerts. As such, most people use Nmap in more limited deployments or divide different parts of their network up for scheduled scanning over time.
+   In addition to setting up a range targets to be scanned, users can also control the depth of each scan. For example, a light or limited scan might return information about which ports are open and which have been closed by firewall settings. More detailed scans could additionally capture information about what kind of devices are using those ports, the operating systems they are running and even the services that are active on them. Nmap can also discover deeper information, like the version of those discovered services. That makes it a perfect tool for finding vulnerabilities or assisting with patch management efforts.
+
+</p>
+
+
+  {% include "polls/footer.html" %}
+
+</body>
+
+</html>

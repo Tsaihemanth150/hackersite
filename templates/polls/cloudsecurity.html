@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+<style>
+example1 {
+  background-image: url(img_flwr.gif), url(paper.gif);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 15px;
+}
+</style>
+<body>
+  {% include "polls/navbar.html" %}
+<br><br>
+<div class="alert alert-primary" role="alert">
+  <center><h1>Cloud Security</h1></center>
+</div>
+  <div id="example1">
+  <p>
+
+    <b>Cloud security, </b> also known as cloud computing security, consists of a set of policies, controls,
+    procedures and technologies that work together to protect cloud-based systems, data, and infrastructure.
+    These security measures are configured to protect cloud data, support regulatory compliance and protect customers
+    privacy as well as setting authentication rules for individual users and devices. From authenticating access to
+    filtering traffic, cloud security can be configured to the exact needs of the business. And because these rules
+    can be configured and managed in one place, administration overheads are reduced and IT teams empowered to
+    focus on other areas of the business.</p>
+  </div>
+  <br>
+  <br>
+
+
+
+
+
+
+  {% include "polls/footer.html" %}
+
+</body>
+
+</html>
