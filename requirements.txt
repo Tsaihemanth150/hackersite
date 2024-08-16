@@ -7,3 +7,6 @@ phonenumbers
 django-recaptcha
 django-bootstrap-v5
 beautifulsoup4
+django-recaptcha==2.0.6
+django-easy-pdf
+django-widget-tweaks
