@@ -1,57 +1,100 @@
-# hackersite
-This Django project that useful for the cyber security learners. 
+# 🕵️‍♂️ Hackersite
 
-# About this project
-This is django based web application, Which has 2  modules and wide varity of functionality. </br>
-<b> 1. Fond end </b> :- Html, CSS, JavaSctipt. </br>
-<b> 2. Backend </b> :- Sqlite. </br>
-<b> 3. Middleware </b> :- Djnago framework. </br> 
+A Django-based web application designed for cybersecurity learners, offering a variety of modules and functionalities for both administrators and customers.
 
-# Modules:- 
-There are modules in this webiste </br>
-1. Admin named as polls </br>
-2. Cutsomer named as hackersite </br>
+---
 
-# Functionality :- 
-1. <b> General</b> :<br>
-i. home page <br>
-ii. About page <br>
-iii. Contact us <br>
-iv. Login page <br>
-v. singnup page <br>
-vi. certification page <br>
-vii. Tools page <br>
-viii. Topics <br>
+## 📖 About This Project
 
-2. <b> Admin </b> : <br>
-i. admin-dashboard <br>
-ii. admin-instructor <br>
-iii. admin-view-customer <br>
-iv. admin-course <br>
-v. admin-question <br>
+- **Frontend:** HTML, CSS, JavaScript  
+- **Backend:** SQLite  
+- **Framework:** Django  
 
-3. <b> Customer </b> : <br>
-i. customer-dashboard <br>
-ii. myprofile page <br>
-iii. apply-course <br>
-iv. history <br>
-v. price page <br>
-vi. ask-question <br>
-vii. question-history <br>
-viii. phone ( to get basic mobile details) <br> 
+### Modules
 
-# HOW TO RUN THIS PROJECT
-step 1:-Install Python(3.7.6) (Dont Forget to Tick Add to Path while installing Python)<br>
-step 2: - Open Terminal and Execute Following Commands : <br>
-          --> python -m pip install -r requirements.txt <br>
-step 3:- Download This Project Zip Folder and Extract it <br>
-step 4:- Move to project folder in Terminal. Then run following Commands : <br>
-         --> py manage.py makemigrations <br>
-         -->  py manage.py migrate <br>
-         -->   py manage.py runserver <br>
-         
-# Disclaimer
-This project is developed for demo purpose and it's not supposed to be used in real application.
+1. **Admin Module** (app name: `polls`)
+2. **Customer Module** (app name: `hackersite`)
+
+---
+
+## 🚀 Functionality
+
+### General (All Users)
+- Home page  
+- About page  
+- Contact Us  
+- Login  
+- Signup  
+- Certification page  
+- Tools page  
+- Topics listing  
+
+### Admin Dashboard
+- Admin dashboard overview  
+- Instructor management  
+- View customers  
+- Course management  
+- Question management  
+
+### Customer Dashboard
+- Customer dashboard overview  
+- My profile page  
+- Apply for courses  
+- Course history  
+- Pricing page  
+- Ask questions  
+- Question history  
+- Phone info (basic mobile details)  
+
+---
+
+## 🛠️ Prerequisites
+
+- Python 3.7+  
+- pip (Python package installer)  
+
+---
+
+## ⚙️ Installation & Setup
+
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/your-username/hackersite.git
+   cd hackersite
+   ```
+
+2. **Create and activate a virtual environment (optional but recommended)**  
+   ```bash
+   python -m venv venv
+   source venv/bin/activate        # Linux/macOS
+   .\venv\Scripts\activate      # Windows
+   ```
+
+3. **Install dependencies**  
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Run database migrations**  
+   ```bash
+   python manage.py makemigrations
+   python manage.py migrate
+   ```
+
+5. **Start the development server**  
+   ```bash
+   python manage.py runserver
+   ```
+
+6. **Access the application**  
+   Open your browser at `http://127.0.0.1:8000/`
+
+---
+
+## ⚠️ Disclaimer
+
+This project is developed for demonstration purposes only and is **not** intended for production use.
+
 
 
 
